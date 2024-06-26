@@ -1,6 +1,5 @@
 import { Container, VStack, Text, Box, Button } from "@chakra-ui/react";
 import { FaWallet } from "react-icons/fa";
-import backgroundDesignUpdated from "../../public/images/background-design-updated.png";
 
 const Index = () => {
   return (
@@ -12,10 +11,7 @@ const Index = () => {
       flexDirection="column" 
       justifyContent="center" 
       alignItems="center" 
-      bg="purple.900"
-      backgroundImage={`url(${backgroundDesignUpdated})`}
-      backgroundSize="cover"
-      backgroundRepeat="no-repeat" 
+      bgGradient="linear(to-r, purple.900 70%, blue.500 30%)"
       color="white" 
       borderRadius="lg" 
       mx={{ base: "10px", md: "30px" }} 
@@ -27,9 +23,8 @@ const Index = () => {
         left: 0,
         width: "100%",
         height: "33vh",
-        backgroundImage: `url(${backgroundDesignUpdated})`,
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
+        bgGradient: "linear(to-r, purple.900 70%, blue.500 30%)",
+        clipPath: "polygon(0 83.33%, 100% 66.67%, 100% 100%, 0 100%)"
       }}
     >
       <VStack spacing={6} width="100%" maxW="400px">
