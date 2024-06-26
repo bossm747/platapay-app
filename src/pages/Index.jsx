@@ -18,6 +18,22 @@ const Index = () => {
     >
       <Box 
         width="100%" 
+        bg="purple.800" 
+        height="66vh" 
+        p={4} 
+        mt={4} 
+        borderRadius="lg"
+        color="white"
+      >
+        {/* Add any content you want inside the dark purple container */}
+        <Box textAlign="center">
+          <Box as="span" fontSize="4xl" display="block" mb={4}>My Wallet</Box>
+          <Box as="span" fontSize="lg" display="block" mb={4}>Manage your finances effortlessly</Box>
+          <Box as="button" bg="teal.500" color="white" px={4} py={2} borderRadius="md">Get Started</Box>
+        </Box>
+      </Box>
+      <Box 
+        width="100%" 
         bg="white" 
         p={4} 
         mt={4} 
@@ -25,11 +41,6 @@ const Index = () => {
         color="black"
       >
         {/* Add any content you want inside the white container */}
-        <Box textAlign="center">
-          <Box as="span" fontSize="4xl" display="block" mb={4}>My Wallet</Box>
-          <Box as="span" fontSize="lg" display="block" mb={4}>Manage your finances effortlessly</Box>
-          <Box as="button" bg="teal.500" color="white" px={4} py={2} borderRadius="md">Get Started</Box>
-        </Box>
       </Box>
     </Container>
   );
