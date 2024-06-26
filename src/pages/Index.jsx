@@ -1,6 +1,6 @@
 import { Container, VStack, Text, Box, Button } from "@chakra-ui/react";
 import { FaWallet } from "react-icons/fa";
-import backgroundDesign from "../../public/images/background-design.png";
+import backgroundDesignUpdated from "../../public/images/background-design-updated.png";
 
 const Index = () => {
   return (
@@ -13,7 +13,7 @@ const Index = () => {
       justifyContent="center" 
       alignItems="center" 
       bg="purple.900"
-      backgroundImage={`url(${backgroundDesign})`}
+      backgroundImage={`url(${backgroundDesignUpdated})`}
       backgroundSize="cover"
       backgroundRepeat="no-repeat" 
       color="white" 
@@ -27,7 +27,7 @@ const Index = () => {
         left: 0,
         width: "100%",
         height: "33vh",
-        backgroundImage: `url(${backgroundDesign})`,
+        backgroundImage: `url(${backgroundDesignUpdated})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
       }}
