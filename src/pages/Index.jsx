@@ -85,7 +85,7 @@ const Index = () => {
       <Box 
         width="90%"  
         bg={isDark ? "gray.700" : "white"} 
-        height="80%" 
+        height="80vh" 
         mt={2} 
         mb={4} 
         borderRadius="lg"
