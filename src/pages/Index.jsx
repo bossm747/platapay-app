@@ -125,22 +125,29 @@ const Index = () => {
             <FaQrcode size="32px" color="white" />
           </Box>
           <Box flex="1" textAlign="center">
-            <FaCog size="24px" color="white" />
+            <Menu>
+              <MenuButton
+                as={IconButton}
+                icon={<FaCog />}
+                aria-label="Settings"
+                variant="ghost"
+                color="white"
+                fontSize="24px"
+              />
+              <MenuList bg="gray.700" color="white">
+                <MenuItem>
+                  <Flex alignItems="center">
+                    <Text mr={2}>Dark Mode</Text>
+                    <Switch isChecked={isDark} onChange={handleToggleTheme} />
+                  </Flex>
+                </MenuItem>
+              </MenuList>
+            </Menu>
           </Box>
           <Box flex="1" textAlign="center">
             <FaFileAlt size="24px" color="white" />
           </Box>
         </Box>
-      </Box>
-      <Box 
-        position="absolute" 
-        top="10px" 
-        right="10px"
-      >
-        <Flex alignItems="center">
-          <Text mr={2}>Dark Mode</Text>
-          <Switch isChecked={isDark} onChange={handleToggleTheme} />
-        </Flex>
       </Box>
     </Container>
   );
