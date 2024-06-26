@@ -1,7 +1,16 @@
-import { Container, Box, Flex, IconButton, Text } from "@chakra-ui/react";
+import { useState } from "react";
+import { Container, Box, Flex, IconButton, Text, Switch, useColorMode } from "@chakra-ui/react";
 import { FaHome, FaUser, FaCog, FaBell, FaHeart, FaQrcode, FaChartBar, FaFileAlt, FaBars } from "react-icons/fa";
 
 const Index = () => {
+  const { colorMode, toggleColorMode } = useColorMode();
+  const [isDark, setIsDark] = useState(colorMode === "dark");
+
+  const handleToggleTheme = () => {
+    toggleColorMode();
+    setIsDark(!isDark);
+  };
+
   return (
     <Container 
       centerContent 
@@ -11,8 +20,8 @@ const Index = () => {
       flexDirection="column" 
       justifyContent="flex-start" 
       alignItems="center" 
-      bg={{ base: "white", md: "black" }} 
-      color="white" 
+      bg={isDark ? "black" : "white"} 
+      color={isDark ? "white" : "black"} 
       borderRadius="lg" 
       mx={{ base: "0", md: "auto" }} 
       position="relative"
@@ -64,13 +73,13 @@ const Index = () => {
       </Box>
       <Box 
         width="90%"  
-        bg="white" 
+        bg={isDark ? "gray.700" : "white"} 
         height="66.67vh" 
         mt="-10vh" 
         mb={4} 
         borderRadius="lg"
         boxShadow="xl"
-        color="black"
+        color={isDark ? "white" : "black"}
         zIndex="base"
       >
         {/* Add any content you want inside the white container */}
@@ -95,7 +104,7 @@ const Index = () => {
             <FaChartBar size="24px" color="white" />
           </Box>
           <Box flex="1" textAlign="center" position="relative" top="-25px">
-            <FaQrcode size="24px" color="white" />
+            <FaQrcode size="32px" color="white" />
           </Box>
           <Box flex="1" textAlign="center">
             <FaCog size="24px" color="white" />
@@ -104,6 +113,16 @@ const Index = () => {
             <FaFileAlt size="24px" color="white" />
           </Box>
         </Box>
+      </Box>
+      <Box 
+        position="absolute" 
+        top="10px" 
+        right="10px"
+      >
+        <Flex alignItems="center">
+          <Text mr={2}>Dark Mode</Text>
+          <Switch isChecked={isDark} onChange={handleToggleTheme} />
+        </Flex>
       </Box>
     </Container>
   );
