@@ -71,6 +71,20 @@ const Index = () => {
           </Flex>
         </Flex>
       </Box>
+
+      {/* New currency container */}
+      <Box 
+        width="100%" 
+        p={4} 
+        bg={isDark ? "gray.700" : "gray.100"} 
+        borderRadius="lg" 
+        mt={4}
+      >
+        <Text fontSize="2xl" fontWeight="bold">
+          ₱1,000.00
+        </Text>
+      </Box>
+
       <Box 
         width="90%"  
         bg={isDark ? "gray.700" : "white"} 
