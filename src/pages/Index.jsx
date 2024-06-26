@@ -36,7 +36,7 @@ const Index = () => {
             fontSize="24px"
           />
           <Box textAlign="center">
-            <img src="https://marcroland84.wordpress.com/wp-content/uploads/2024/06/copy-of-innovate-hub-500-x-500-px.png?w=500" alt="Logo" style={{ height: "50px" }} />
+            <img src="/images/new-logo.png" alt="Logo" style={{ height: "50px" }} />
             <Text fontSize="lg" mt={2}>My Wallet</Text>
           </Box>
           <Flex>
