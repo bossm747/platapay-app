@@ -37,7 +37,8 @@ const Index = () => {
         color="white"
         position="sticky"
         top="0"
-        zIndex="2"  // Ensure c2 is on top of c1
+        zIndex="2"
+        boxShadow="0px 4px 6px rgba(0, 0, 0, 0.1)"  // Add this line
       >
         <Flex justifyContent="space-between" alignItems="center" mb={4}>
           <IconButton
@@ -65,14 +66,13 @@ const Index = () => {
         </Flex>
       </Box>
 
-      {/* New currency container */}
       <Box 
         width="100%" 
         p={4} 
         bg={isDark ? "gray.700" : "gray.100"} 
         borderRadius="lg" 
         mt={4}
-        zIndex="1"  // Ensure c1 is below c2
+        zIndex="1"
       >
         <Text fontSize="2xl" fontWeight="bold">
           ₱1,000.00
@@ -88,7 +88,7 @@ const Index = () => {
         borderRadius="lg"
         boxShadow="xl"
         color={isDark ? "white" : "black"}
-        zIndex="3"  // Ensure c3 is on top of c2
+        zIndex="3"
       >
         {/* Add any content you want inside the white container */}
       </Box>
