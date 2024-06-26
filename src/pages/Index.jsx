@@ -71,7 +71,7 @@ const Index = () => {
         p={4} 
         bg={isDark ? "gray.700" : "gray.100"} 
         borderRadius="lg" 
-        mt={4}
+        mt={-10}
         zIndex="1"
       >
         <Text fontSize="xl" fontWeight="bold" textAlign="left">
@@ -86,7 +86,7 @@ const Index = () => {
         width="90%"  
         bg={isDark ? "gray.700" : "white"} 
         height="80vh" 
-        mt="-20vh" 
+        mt={4} 
         mb={4} 
         borderRadius="lg"
         boxShadow="xl"
