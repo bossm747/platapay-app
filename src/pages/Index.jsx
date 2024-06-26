@@ -31,7 +31,7 @@ const Index = () => {
       <Box 
         width="100%" 
         bg="blue.900" 
-        height="60vh" 
+        height="60px"  // Adjusted height to match footer
         p={4} 
         borderRadius="0 0 2xl 2xl"
         color="white"
@@ -99,6 +99,7 @@ const Index = () => {
         as="footer"
         width="100%"
         bg="blue.500"  
+        height="60px"  // Set height to match header
         position="sticky"
         bottom="0"
         p={4}
