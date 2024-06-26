@@ -1,4 +1,5 @@
 import { Container, Box } from "@chakra-ui/react";
+import { FaHome, FaUser, FaCog, FaBell, FaHeart } from "react-icons/fa";
 
 const Index = () => {
   return (
@@ -26,7 +27,6 @@ const Index = () => {
         borderRadius="0 0 2xl 2xl"
         color="white"
       >
-        {/* Add any content you want inside the dark purple container */}
         <Box textAlign="center">
           <Box as="span" fontSize="4xl" display="block" mb={4}>My Wallet</Box>
           <Box as="span" fontSize="lg" display="block" mb={4}>Manage your finances effortlessly</Box>
@@ -34,7 +34,7 @@ const Index = () => {
         </Box>
       </Box>
       <Box 
-        width="90%"  // Adjusted width to be slightly bigger
+        width="90%"  
         bg="white" 
         height="66.67vh" 
         mt="-10vh" 
@@ -48,23 +48,36 @@ const Index = () => {
       <Box 
         as="footer"
         width="100%"
-        bg="gray.200"  // Dirty white background
+        bg="blue.500"  
         position="sticky"
         bottom="0"
         p={4}
         display="flex"
-        justifyContent="center"
+        justifyContent="space-between"
         alignItems="center"
       >
+        <Box display="flex" gap={4}>
+          <FaHome size="24px" color="white" />
+          <FaUser size="24px" color="white" />
+        </Box>
         <Box 
           width="50px"
           height="50px"
           bg="white"
           borderRadius="50%"
           position="absolute"
-          top="-25px"  // Half of the container's size offset from the top edge of the footer
+          top="-25px"  
           boxShadow="md"
-        />
+          display="flex"
+          justifyContent="center"
+          alignItems="center"
+        >
+          <FaHeart size="24px" color="blue.500" />
+        </Box>
+        <Box display="flex" gap={4}>
+          <FaCog size="24px" color="white" />
+          <FaBell size="24px" color="white" />
+        </Box>
       </Box>
     </Container>
   );
