@@ -1,5 +1,5 @@
 import { Container, Box } from "@chakra-ui/react";
-import { FaHome, FaUser, FaCog, FaBell, FaHeart } from "react-icons/fa";
+import { FaHome, FaUser, FaCog, FaBell, FaHeart, FaQrcode } from "react-icons/fa";
 
 const Index = () => {
   return (
@@ -42,6 +42,7 @@ const Index = () => {
         borderRadius="lg"
         boxShadow="xl"
         color="black"
+        zIndex="base"
       >
         {/* Add any content you want inside the white container */}
       </Box>
@@ -55,28 +56,24 @@ const Index = () => {
         display="flex"
         justifyContent="space-between"
         alignItems="center"
+        zIndex="sticky"
       >
-        <Box display="flex" gap={4}>
-          <FaHome size="24px" color="white" />
-          <FaUser size="24px" color="white" />
-        </Box>
-        <Box 
-          width="50px"
-          height="50px"
-          bg="white"
-          borderRadius="50%"
-          position="absolute"
-          top="-25px"  
-          boxShadow="md"
-          display="flex"
-          justifyContent="center"
-          alignItems="center"
-        >
-          <FaHeart size="24px" color="blue.500" />
-        </Box>
-        <Box display="flex" gap={4}>
-          <FaCog size="24px" color="white" />
-          <FaBell size="24px" color="white" />
+        <Box display="flex" justifyContent="space-between" width="100%">
+          <Box flex="1" textAlign="center">
+            <FaHome size="24px" color="white" />
+          </Box>
+          <Box flex="1" textAlign="center">
+            <FaUser size="24px" color="white" />
+          </Box>
+          <Box flex="1" textAlign="center" position="relative" top="-25px">
+            <FaQrcode size="24px" color="white" />
+          </Box>
+          <Box flex="1" textAlign="center">
+            <FaCog size="24px" color="white" />
+          </Box>
+          <Box flex="1" textAlign="center">
+            <FaBell size="24px" color="white" />
+          </Box>
         </Box>
       </Box>
     </Container>
