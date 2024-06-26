@@ -1,5 +1,5 @@
-import { Container, Box } from "@chakra-ui/react";
-import { FaHome, FaUser, FaCog, FaBell, FaHeart, FaQrcode } from "react-icons/fa";
+import { Container, Box, Flex, IconButton, Text } from "@chakra-ui/react";
+import { FaHome, FaUser, FaCog, FaBell, FaHeart, FaQrcode, FaChartBar, FaFileAlt, FaBars } from "react-icons/fa";
 
 const Index = () => {
   return (
@@ -27,6 +27,35 @@ const Index = () => {
         borderRadius="0 0 2xl 2xl"
         color="white"
       >
+        <Flex justifyContent="space-between" alignItems="center" mb={4}>
+          <IconButton
+            icon={<FaBars />}
+            aria-label="Menu"
+            variant="ghost"
+            color="white"
+            fontSize="24px"
+          />
+          <Box textAlign="center">
+            <img src="https://marcroland84.wordpress.com/wp-content/uploads/2024/06/copy-of-innovate-hub-500-x-500-px.png?w=500" alt="Logo" style={{ height: "50px" }} />
+            <Text fontSize="lg" mt={2}>My Wallet</Text>
+          </Box>
+          <Flex>
+            <IconButton
+              icon={<FaUser />}
+              aria-label="Profile"
+              variant="ghost"
+              color="white"
+              fontSize="24px"
+            />
+            <IconButton
+              icon={<FaBell />}
+              aria-label="Notifications"
+              variant="ghost"
+              color="white"
+              fontSize="24px"
+            />
+          </Flex>
+        </Flex>
         <Box textAlign="center">
           <Box as="span" fontSize="4xl" display="block" mb={4}>My Wallet</Box>
           <Box as="span" fontSize="lg" display="block" mb={4}>Manage your finances effortlessly</Box>
@@ -63,7 +92,7 @@ const Index = () => {
             <FaHome size="24px" color="white" />
           </Box>
           <Box flex="1" textAlign="center">
-            <FaUser size="24px" color="white" />
+            <FaChartBar size="24px" color="white" />
           </Box>
           <Box flex="1" textAlign="center" position="relative" top="-25px">
             <FaQrcode size="24px" color="white" />
@@ -72,7 +101,7 @@ const Index = () => {
             <FaCog size="24px" color="white" />
           </Box>
           <Box flex="1" textAlign="center">
-            <FaBell size="24px" color="white" />
+            <FaFileAlt size="24px" color="white" />
           </Box>
         </Box>
       </Box>
