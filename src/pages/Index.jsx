@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Container, Box, Flex, IconButton, Text, Switch, useColorMode } from "@chakra-ui/react";
+import { Container, Box, Flex, IconButton, Text, Switch, useColorMode, Menu, MenuButton, MenuList, MenuItem } from "@chakra-ui/react";
 import { FaHome, FaUser, FaCog, FaBell, FaHeart, FaQrcode, FaChartBar, FaFileAlt, FaBars } from "react-icons/fa";
 
 const Index = () => {
@@ -63,6 +63,24 @@ const Index = () => {
               color="white"
               fontSize="24px"
             />
+            <Menu>
+              <MenuButton
+                as={IconButton}
+                icon={<FaCog />}
+                aria-label="Settings"
+                variant="ghost"
+                color="white"
+                fontSize="24px"
+              />
+              <MenuList>
+                <MenuItem>
+                  <Flex alignItems="center">
+                    <Text mr={2}>Dark Mode</Text>
+                    <Switch isChecked={isDark} onChange={handleToggleTheme} />
+                  </Flex>
+                </MenuItem>
+              </MenuList>
+            </Menu>
           </Flex>
         </Flex>
         <Box textAlign="center">
