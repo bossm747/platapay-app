@@ -55,13 +55,6 @@ const Index = () => {
           </Box>
           <Flex>
             <IconButton
-              icon={<FaUser />}
-              aria-label="Profile"
-              variant="ghost"
-              color="white"
-              fontSize="24px"
-            />
-            <IconButton
               icon={<FaBell />}
               aria-label="Notifications"
               variant="ghost"
@@ -164,7 +157,7 @@ const Index = () => {
               </Menu>
             </Box>
             <Box flex="1" textAlign="center">
-              <FaFileAlt size="24px" color="white" />
+              <FaUser size="24px" color="white" />
             </Box>
           </Box>
         </Box>
