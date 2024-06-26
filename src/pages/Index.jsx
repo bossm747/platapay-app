@@ -38,7 +38,7 @@ const Index = () => {
         position="sticky"
         top="0"
         zIndex="2"
-        boxShadow="0px 4px 6px rgba(0, 0, 0, 0.1)"  // Add this line
+        boxShadow="0px 4px 6px rgba(0, 0, 0, 0.1)"
       >
         <Flex justifyContent="space-between" alignItems="center" mb={4}>
           <IconButton
@@ -74,8 +74,11 @@ const Index = () => {
         mt={4}
         zIndex="1"
       >
+        <Text fontSize="xl" fontWeight="bold" textAlign="left">
+          Balance
+        </Text>
         <Text fontSize="2xl" fontWeight="bold">
-          ₱1,000.00
+          ₱74,700.00
         </Text>
       </Box>
 
