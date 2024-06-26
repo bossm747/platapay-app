@@ -21,8 +21,7 @@ const Index = () => {
         bg="purple.800" 
         height="66vh" 
         p={4} 
-        mt={4} 
-        borderRadius="lg"
+        borderRadius="0 0 2xl 2xl"
         color="white"
       >
         {/* Add any content you want inside the dark purple container */}
