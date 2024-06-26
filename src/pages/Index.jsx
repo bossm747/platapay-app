@@ -34,7 +34,7 @@ const Index = () => {
         </Box>
       </Box>
       <Box 
-        width="80%" 
+        width="90%"  // Adjusted width to be slightly bigger
         bg="white" 
         height="66.67vh" 
         mt="-10vh" 
@@ -44,6 +44,27 @@ const Index = () => {
         color="black"
       >
         {/* Add any content you want inside the white container */}
+      </Box>
+      <Box 
+        as="footer"
+        width="100%"
+        bg="gray.200"  // Dirty white background
+        position="sticky"
+        bottom="0"
+        p={4}
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+      >
+        <Box 
+          width="50px"
+          height="50px"
+          bg="white"
+          borderRadius="50%"
+          position="absolute"
+          top="-25px"  // Half of the container's size offset from the top edge of the footer
+          boxShadow="md"
+        />
       </Box>
     </Container>
   );
