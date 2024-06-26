@@ -8,13 +8,15 @@ const Index = () => {
       height="100vh" 
       display="flex" 
       flexDirection="column" 
-      justifyContent="center" 
+      justifyContent="flex-start" 
       alignItems="center" 
       bg={{ base: "white", md: "black" }} 
       color="white" 
       borderRadius="lg" 
       mx={{ base: "0", md: "auto" }} 
       position="relative"
+      overflow="hidden"
+      p={0}
     >
       <Box 
         width="100%" 
@@ -35,7 +37,7 @@ const Index = () => {
         width="100%" 
         bg="white" 
         p={4} 
-        mt={4} 
+        mt={0} 
         borderRadius="lg"
         color="black"
       >
