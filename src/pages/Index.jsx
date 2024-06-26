@@ -36,8 +36,8 @@ const Index = () => {
       <Box 
         width="80%" 
         bg="white" 
-        height="50vh" 
-        mt="auto" 
+        height="66.67vh" 
+        mt="-10vh" 
         mb={4} 
         borderRadius="lg"
         boxShadow="xl"
