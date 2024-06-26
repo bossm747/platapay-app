@@ -34,11 +34,13 @@ const Index = () => {
         </Box>
       </Box>
       <Box 
-        width="100%" 
+        width="80%" 
         bg="white" 
-        p={4} 
-        mt={0} 
+        height="50vh" 
+        mt="auto" 
+        mb={4} 
         borderRadius="lg"
+        boxShadow="xl"
         color="black"
       >
         {/* Add any content you want inside the white container */}
