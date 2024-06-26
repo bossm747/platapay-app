@@ -1,17 +1,14 @@
-// Update this page (the content is just a fallback if you fail and example)
-// Use chakra-ui
-import { Container, Text, VStack } from "@chakra-ui/react";
-
-// Example of using react-icons
-// import { FaRocket } from "react-icons/fa";
-// <IconButton aria-label="Add" icon={<FaRocket />} size="lg" />; // IconButton would also have to be imported from chakra
+import { Container, VStack, Text, Box, Button } from "@chakra-ui/react";
+import { FaWallet } from "react-icons/fa";
 
 const Index = () => {
   return (
-    <Container centerContent maxW="container.md" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center">
-      <VStack spacing={4}>
-        <Text fontSize="2xl">Your Blank Canvas</Text>
-        <Text>Chat with the agent to start making edits.</Text>
+    <Container centerContent maxW="container.md" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center" bg="blue.900" color="white">
+      <VStack spacing={6}>
+        <Box as={FaWallet} size="64px" />
+        <Text fontSize="4xl" fontWeight="bold">My Wallet</Text>
+        <Text fontSize="lg">Manage your finances effortlessly</Text>
+        <Button colorScheme="teal" size="lg">Get Started</Button>
       </VStack>
     </Container>
   );
