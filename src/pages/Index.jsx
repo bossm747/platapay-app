@@ -21,7 +21,7 @@ const Index = () => {
       <Box 
         width="100%" 
         bg="purple.800" 
-        height="66vh" 
+        height="75vh" 
         p={4} 
         borderRadius="0 0 2xl 2xl"
         color="white"
