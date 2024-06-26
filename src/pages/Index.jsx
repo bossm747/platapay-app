@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Container, Box, Flex, IconButton, Text, Switch, useColorMode, Menu, MenuButton, MenuList, MenuItem, Image } from "@chakra-ui/react";
+import { Container, Box, Flex, IconButton, Text, Switch, useColorMode, Menu, MenuButton, MenuList, MenuItem, Image, Divider } from "@chakra-ui/react";
 import { FaHome, FaUser, FaCog, FaBell, FaHeart, FaQrcode, FaChartBar, FaFileAlt, FaBars } from "react-icons/fa";
 
 const Index = () => {
@@ -30,8 +30,8 @@ const Index = () => {
     >
       <Box 
         width="100%" 
-        bg="blue.900" 
-        height="80vh"  // Changed height to 80% of the screen height
+        bg="blue.800" 
+        height="20vh" 
         p={4} 
         borderRadius="0 0 2xl 2xl"
         color="white"
@@ -64,6 +64,7 @@ const Index = () => {
             />
           </Flex>
         </Flex>
+        <Divider borderColor="whiteAlpha.600" />
       </Box>
 
       <Box 
@@ -84,7 +85,7 @@ const Index = () => {
 
       <Box 
         width="90%"  
-        bg={isDark ? "gray.700" : "white"} 
+        bg={isDark ? "gray.600" : "white"} 
         height="80vh" 
         mt={2} 
         mb={4} 
