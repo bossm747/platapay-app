@@ -31,7 +31,7 @@ const Index = () => {
       <Box 
         width="100%" 
         bg="blue.900" 
-        height="60px"  // Adjusted height to match footer
+        height="80vh"  // Changed height to 80% of the screen height
         p={4} 
         borderRadius="0 0 2xl 2xl"
         color="white"
