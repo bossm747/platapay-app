@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Container, Box, Flex, IconButton, Text, Switch, useColorMode, Menu, MenuButton, MenuList, MenuItem } from "@chakra-ui/react";
+import { Container, Box, Flex, IconButton, Text, Switch, useColorMode, Menu, MenuButton, MenuList, MenuItem, Image } from "@chakra-ui/react";
 import { FaHome, FaUser, FaCog, FaBell, FaHeart, FaQrcode, FaChartBar, FaFileAlt, FaBars } from "react-icons/fa";
 
 const Index = () => {
@@ -35,6 +35,9 @@ const Index = () => {
         p={4} 
         borderRadius="0 0 2xl 2xl"
         color="white"
+        position="sticky"
+        top="0"
+        zIndex="sticky"
       >
         <Flex justifyContent="space-between" alignItems="center" mb={4}>
           <IconButton
@@ -45,8 +48,10 @@ const Index = () => {
             fontSize="24px"
           />
           <Box textAlign="center">
-            <img src="/images/new-logo.png" alt="Logo" style={{ height: "50px" }} />
-            <Text fontSize="lg" mt={2}>My Wallet</Text>
+            <Box mb={2}>
+              <Image src="https://marcroland84.wordpress.com/wp-content/uploads/2024/06/copy-of-innovate-hub-2-1.png?w=1024" alt="Innovate Hub" height="50px" />
+            </Box>
+            <Text fontSize="lg">Page Title</Text>
           </Box>
           <Flex>
             <IconButton
@@ -63,31 +68,8 @@ const Index = () => {
               color="white"
               fontSize="24px"
             />
-            <Menu>
-              <MenuButton
-                as={IconButton}
-                icon={<FaCog />}
-                aria-label="Settings"
-                variant="ghost"
-                color="white"
-                fontSize="24px"
-              />
-              <MenuList>
-                <MenuItem>
-                  <Flex alignItems="center">
-                    <Text mr={2}>Dark Mode</Text>
-                    <Switch isChecked={isDark} onChange={handleToggleTheme} />
-                  </Flex>
-                </MenuItem>
-              </MenuList>
-            </Menu>
           </Flex>
         </Flex>
-        <Box textAlign="center">
-          <Box as="span" fontSize="4xl" display="block" mb={4}>My Wallet</Box>
-          <Box as="span" fontSize="lg" display="block" mb={4}>Manage your finances effortlessly</Box>
-          <Box as="button" bg="teal.500" color="white" px={4} py={2} borderRadius="md">Get Started</Box>
-        </Box>
       </Box>
       <Box 
         width="90%"  
