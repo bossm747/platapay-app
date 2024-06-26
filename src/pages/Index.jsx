@@ -10,7 +10,7 @@ const Index = () => {
         <Text fontSize="lg" textAlign="center">Manage your finances effortlessly</Text>
         <Button colorScheme="teal" size="lg" width="100%">Get Started</Button>
       </VStack>
-      <Box position="absolute" bottom="0" width="100%" maxW="400px" height="33vh" bg="white" borderRadius="lg" m="10px" boxShadow="xl" />
+      <Box position="absolute" bottom="0" width="90%" maxW="400px" height="33vh" bg="white" borderRadius="lg" m="10px" boxShadow="xl" />
     </Container>
   );
 };
