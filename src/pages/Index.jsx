@@ -1,4 +1,4 @@
-import { Container } from "@chakra-ui/react";
+import { Container, Box } from "@chakra-ui/react";
 
 const Index = () => {
   return (
@@ -16,6 +16,16 @@ const Index = () => {
       mx={{ base: "10px", md: "30px" }} 
       position="relative"
     >
+    {/* Existing content */}
+      <Box 
+        width="100%" 
+        bg="white" 
+        p={4} 
+        mt={4} 
+        borderRadius="lg"
+      >
+        {/* Add any content you want inside the white container */}
+      </Box>
     </Container>
   );
 };
