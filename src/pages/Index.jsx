@@ -103,8 +103,23 @@ const Index = () => {
           <Box flex="1" textAlign="center">
             <FaChartBar size="24px" color="white" />
           </Box>
-          <Box flex="1" textAlign="center" position="relative" top="-25px">
-            <FaQrcode size="32px" color="white" />
+          <Box flex="1" textAlign="center" position="relative">
+            <Box 
+              width="50px" 
+              height="50px" 
+              bg="white" 
+              borderRadius="50%" 
+              display="flex" 
+              justifyContent="center" 
+              alignItems="center" 
+              position="absolute" 
+              top="-25px" 
+              left="50%" 
+              transform="translateX(-50%)"
+              boxShadow="0 0 10px rgba(0, 0, 0, 0.1)"
+            >
+              <FaQrcode size="32px" color="blue.500" />
+            </Box>
           </Box>
           <Box flex="1" textAlign="center">
             <Menu>
