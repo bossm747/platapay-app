@@ -20,7 +20,7 @@ const Index = () => {
       flexDirection="column" 
       justifyContent="flex-start" 
       alignItems="center" 
-      bg={isDark ? "black" : "white"} 
+      bg="black" 
       color={isDark ? "white" : "black"} 
       borderRadius="lg" 
       mx={{ base: "0", md: "auto" }} 
