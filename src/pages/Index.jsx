@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Container, Box, Flex, IconButton, Text, Switch, useColorMode, Menu, MenuButton, MenuList, MenuItem, Image, Divider } from "@chakra-ui/react";
 import { FaHome, FaUser, FaCog, FaBell, FaQrcode, FaChartBar, FaBars } from "react-icons/fa";
 
-const darkPurple = "#4B0082";
+const darkPurple = "#1a202c"; // Updated to a more suitable dark mode color
 const white = "#FFFFFF";
 const headerFooterColor = "#4B0082"; // Replace with the actual color from the "Platapay" text
 const rowColor = "#FFFFFF"; // Replace with the actual color from the "Wallet Balance" card
@@ -25,19 +25,19 @@ const Index = () => {
       flexDirection="column" 
       justifyContent="flex-start" 
       alignItems="center" 
-      bg={isDark ? "black" : rowColor} 
-      color={isDark ? "white" : "black"} 
+      bg={isDark ? "gray.800" : rowColor} // Updated background color for dark mode
+      color={isDark ? "gray.100" : "black"} // Updated text color for dark mode
       borderRadius="2xl" 
       mx={{ base: "0", md: "auto" }} 
       position="relative"
       overflow="hidden"
       p={0}
-      border="8px solid darkgrey"
-      boxShadow="0 0 10px white"
+      border={isDark ? "8px solid gray.700" : "8px solid darkgrey"} // Updated border color for dark mode
+      boxShadow={isDark ? "0 0 10px gray.700" : "0 0 10px white"} // Updated box shadow color for dark mode
     >
       <Box 
         width="100%" 
-        bg={headerFooterColor} 
+        bg={isDark ? "gray.900" : headerFooterColor} // Updated header background color for dark mode
         p={4} 
         borderRadius="0 0 2xl 2xl"
         color="white"
@@ -73,17 +73,17 @@ const Index = () => {
         <Divider borderColor="whiteAlpha.600" />
       </Box>
 
-      <Box width="100%" bg={darkPurple} flex="1" p={4}>
+      <Box width="100%" bg={isDark ? "gray.700" : darkPurple} flex="1" p={4}>
       </Box>
-      <Box width="100%" bg={darkPurple} flex="1" p={4}>
+      <Box width="100%" bg={isDark ? "gray.700" : darkPurple} flex="1" p={4}>
       </Box>
-      <Box width="100%" bg="#F5F5F5" flex="1" p={4}>
+      <Box width="100%" bg={isDark ? "gray.600" : "#F5F5F5"} flex="1" p={4}>
       </Box>
 
       <Box 
         as="footer"
         width="100%"
-        bg={headerFooterColor}  
+        bg={isDark ? "gray.900" : headerFooterColor}  
         height="60px"
         position="sticky"
         bottom="0"
