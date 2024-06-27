@@ -137,7 +137,17 @@ const Index = () => {
                 <MenuItem>
                   <Flex alignItems="center">
                     <Text mr={2}>Dark Mode</Text>
-                    <Switch isChecked={isDark} onChange={handleToggleTheme} />
+                    <Switch 
+                      isChecked={isDark} 
+                      onChange={handleToggleTheme} 
+                      colorScheme="purple"
+                      bg={isDark ? "gray.700" : "gray.700"}
+                      borderColor={isDark ? "gray.600" : "gray.600"}
+                      _checked={{
+                        bg: "purple.500",
+                        borderColor: "purple.500",
+                      }}
+                    />
                   </Flex>
                 </MenuItem>
               </MenuList>
