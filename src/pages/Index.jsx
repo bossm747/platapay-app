@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { Container, Box, Flex, IconButton, Text, Switch, useColorMode, Menu, MenuButton, MenuList, MenuItem, Image, Divider } from "@chakra-ui/react";
-import { FaHome, FaUser, FaCog, FaBell, FaHeart, FaQrcode, FaChartBar, FaFileAlt, FaBars } from "react-icons/fa";
+import { FaHome, FaUser, FaCog, FaBell, FaQrcode, FaChartBar, FaBars } from "react-icons/fa";
+
+const darkPurple = "#4B0082";
+const white = "#FFFFFF";
 
 const Index = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -64,6 +67,16 @@ const Index = () => {
           </Flex>
         </Flex>
         <Divider borderColor="whiteAlpha.600" />
+      </Box>
+
+      <Box width="100%" bg={darkPurple} flex="1" p={4}>
+        <Text>Row 1</Text>
+      </Box>
+      <Box width="100%" bg={darkPurple} flex="1" p={4}>
+        <Text>Row 2</Text>
+      </Box>
+      <Box width="100%" bg={white} flex="1" p={4}>
+        <Text>Row 3</Text>
       </Box>
 
       <Box 
