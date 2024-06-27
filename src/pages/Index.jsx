@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Container, Box, Flex, IconButton, Text, Switch, useColorMode, Menu, MenuButton, MenuList, MenuItem, Image, Divider } from "@chakra-ui/react";
 import { FaHome, FaUser, FaCog, FaBell, FaQrcode, FaChartBar, FaBars } from "react-icons/fa";
 
-const darkPurple = "#1a202c"; // Updated to a more suitable dark mode color
+const darkPurple = "#4B0082"; // Updated to a more suitable dark mode color
 const white = "#FFFFFF";
 const headerFooterColor = "#4B0082"; // Replace with the actual color from the "Platapay" text
 const rowColor = "#FFFFFF"; // Replace with the actual color from the "Wallet Balance" card
