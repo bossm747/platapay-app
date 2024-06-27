@@ -73,11 +73,11 @@ const Index = () => {
         <Divider borderColor="whiteAlpha.600" />
       </Box>
 
-      <Box width="100%" bg={rowColor} flex="1" p={4}>
+      <Box width="100%" bg={darkPurple} flex="1" p={4}>
       </Box>
-      <Box width="100%" bg={rowColor} flex="1" p={4}>
+      <Box width="100%" bg={darkPurple} flex="1" p={4}>
       </Box>
-      <Box width="100%" bg={white} flex="1" p={4}>
+      <Box width="100%" bg="#F5F5F5" flex="1" p={4}>
       </Box>
 
       <Box 
