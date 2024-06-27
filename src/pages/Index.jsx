@@ -141,8 +141,8 @@ const Index = () => {
                       isChecked={isDark} 
                       onChange={handleToggleTheme} 
                       colorScheme="purple"
-                      bg={isDark ? "gray.700" : "gray.700"}
-                      borderColor={isDark ? "gray.600" : "gray.600"}
+                      bg={isDark ? "gray.700" : "gray.300"} // Updated background color for light mode
+                      borderColor={isDark ? "gray.600" : "gray.400"} // Updated border color for light mode
                       _checked={{
                         bg: "purple.500",
                         borderColor: "purple.500",
