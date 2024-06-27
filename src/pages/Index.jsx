@@ -68,22 +68,6 @@ const Index = () => {
       </Box>
 
       <Box 
-        width="100%" 
-        p={4} 
-        bg={isDark ? "gray.700" : "gray.100"} 
-        borderRadius="lg" 
-        mt={-8}
-        zIndex="1"
-      >
-        <Text fontSize="xl" fontWeight="bold" textAlign="left">
-          Balance
-        </Text>
-        <Text fontSize="2xl" fontWeight="bold">
-          ₱74,700.00
-        </Text>
-      </Box>
-
-      <Box 
         as="footer"
         width="100%"
         bg="blue.500"  
