@@ -85,7 +85,6 @@ const Index = () => {
 
       <Box 
         width="100%"  
-        bg={isDark ? "gray.600" : "white"} 
         height="100vh" 
         mt={2} 
         mb={4} 
@@ -94,8 +93,26 @@ const Index = () => {
         color={isDark ? "white" : "black"}
         zIndex="3"
       >
-        {/* Add any content you want inside the white container */}
+        <Box bg="purple.800" height="33.33%" />
+        <Box bg="transparent" height="33.33%" />
+        <Box bg="purple.800" height="33.33%" />
       </Box>
+
+      <Box 
+        width="100%"  
+        height="100vh" 
+        mt={2} 
+        mb={4} 
+        borderRadius="lg"
+        boxShadow="xl"
+        color={isDark ? "white" : "black"}
+        zIndex="3"
+        mx={{ base: "0", md: "4" }}
+      >
+        <Box bg="transparent" height="33.33%" />
+        <Box bg={isDark ? "gray.600" : "white"} height="66.67%" />
+      </Box>
+
       <Box 
         as="footer"
         width="100%"
