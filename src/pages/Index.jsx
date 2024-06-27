@@ -70,20 +70,17 @@ const Index = () => {
       </Box>
 
       <Box width="100%" bg={darkPurple} flex="1" p={4}>
-        <Text>Row 1</Text>
       </Box>
       <Box width="100%" bg={darkPurple} flex="1" p={4}>
-        <Text>Row 2</Text>
       </Box>
       <Box width="100%" bg={white} flex="1" p={4}>
-        <Text>Row 3</Text>
       </Box>
 
       <Box 
         as="footer"
         width="100%"
-        bg="blue.500"  
-        height="60px"  // Set height to match header
+        bg="blue.800"  
+        height="60px"
         position="sticky"
         bottom="0"
         p={4}
