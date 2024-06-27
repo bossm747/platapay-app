@@ -84,7 +84,7 @@ const Index = () => {
       </Box>
 
       <Box 
-        width="100%"  
+        width="calc(100% - 20px)"  // 10px less on both sides
         height="100vh" 
         mt={2} 
         mb={4} 
@@ -92,10 +92,11 @@ const Index = () => {
         boxShadow="xl"
         color={isDark ? "white" : "black"}
         zIndex="3"
+        mx="auto"  // Center the box horizontally
       >
-        <Box bg="purple.800" height="33.33%" />
         <Box bg="transparent" height="33.33%" />
-        <Box bg="purple.800" height="33.33%" />
+        <Box bg={isDark ? "gray.600" : "white"} height="33.33%" />
+        <Box bg={isDark ? "gray.600" : "white"} height="33.33%" />
       </Box>
 
       <Box 
