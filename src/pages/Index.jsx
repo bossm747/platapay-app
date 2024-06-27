@@ -58,7 +58,7 @@ const Index = () => {
             <Box mb={2}>
               <Image src="https://marcroland84.wordpress.com/wp-content/uploads/2024/06/copy-of-innovate-hub-2-1.png?w=1024" alt="Innovate Hub" height="50px" />
             </Box>
-            <Text fontSize="lg">Page Title</Text>
+            <Text fontSize="lg" fontWeight="bold" color="white">E-wallet</Text>
           </Box>
           <Flex>
             <IconButton
