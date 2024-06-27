@@ -30,6 +30,8 @@ const Index = () => {
       position="relative"
       overflow="hidden"
       p={0}
+      border="8px solid darkgrey"
+      boxShadow="0 0 10px white"
     >
       <Box 
         width="100%" 
