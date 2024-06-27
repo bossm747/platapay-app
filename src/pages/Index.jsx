@@ -18,9 +18,9 @@ const Index = () => {
       height="100vh" 
       display="flex" 
       flexDirection="column" 
-      justifyContent="flex-start" 
+      justifyContent="space-between" 
       alignItems="center" 
-      bg="black" 
+      bg={isDark ? "black" : "white"} 
       color={isDark ? "white" : "black"} 
       borderRadius="lg" 
       mx={{ base: "0", md: "auto" }} 
@@ -70,7 +70,7 @@ const Index = () => {
         as="footer"
         width="100%"
         bg="blue.500"  
-        height="60px"  // Set height to match header
+        height="60px"
         position="sticky"
         bottom="0"
         p={4}
