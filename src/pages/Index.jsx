@@ -81,9 +81,9 @@ const Index = () => {
           mx="auto"
           overflow="hidden"
         >
-          <Box height="33.33%" bg="transparent" className="mcr3"></Box> {/* Row 1 */}
-          <Box height="33.33%" bg="white" className="c3"></Box> {/* Row 2 */}
-          <Box height="33.33%" bg="white" className="c3"></Box> {/* Row 3 */}
+          <Box height="33.33%" bg="#E8E8E8" className="mcr3"></Box> {/* Row 1 */}
+          <Box height="33.33%" bg="white" className="c3" boxShadow="0 4px 8px rgba(0, 0, 0, 0.1)"></Box> {/* Row 2 */}
+          <Box height="33.33%" bg="white" className="c3" boxShadow="0 4px 8px rgba(0, 0, 0, 0.1)"></Box> {/* Row 3 */}
         </Box>
       </Box>
 
