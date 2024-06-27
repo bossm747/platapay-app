@@ -20,7 +20,7 @@ const Index = () => {
       flexDirection="column" 
       justifyContent="flex-start" 
       alignItems="center" 
-      bg={isDark ? "black" : "white"} 
+      bg="black" 
       color={isDark ? "white" : "black"} 
       borderRadius="lg" 
       mx={{ base: "0", md: "auto" }} 
@@ -31,13 +31,12 @@ const Index = () => {
       <Box 
         width="100%" 
         bg="blue.800" 
-        height="20vh" 
         p={4} 
         borderRadius="0 0 2xl 2xl"
         color="white"
         position="sticky"
         top="0"
-        zIndex="2"
+        zIndex="1000"
         boxShadow="0px 4px 6px rgba(0, 0, 0, 0.1)"
       >
         <Flex justifyContent="space-between" alignItems="center" mb={4}>
@@ -68,35 +67,6 @@ const Index = () => {
       </Box>
 
       <Box 
-        width="100%" 
-        p={4} 
-        bg={isDark ? "gray.700" : "gray.100"} 
-        borderRadius="lg" 
-        mt={-8}
-        zIndex="1"
-      >
-        <Text fontSize="xl" fontWeight="bold" textAlign="left">
-          Balance
-        </Text>
-        <Text fontSize="2xl" fontWeight="bold">
-          ₱74,700.00
-        </Text>
-      </Box>
-
-      <Box 
-        width="100%"  
-        bg={isDark ? "gray.600" : "white"} 
-        height="100vh" 
-        mt={2} 
-        mb={4} 
-        borderRadius="lg"
-        boxShadow="xl"
-        color={isDark ? "white" : "black"}
-        zIndex="3"
-      >
-        {/* Add any content you want inside the white container */}
-      </Box>
-      <Box 
         as="footer"
         width="100%"
         bg="blue.500"  
@@ -107,7 +77,7 @@ const Index = () => {
         display="flex"
         justifyContent="space-between"
         alignItems="center"
-        zIndex="sticky"
+        zIndex="1000"
       >
         <Box display="flex" justifyContent="space-between" width="100%">
           {/* Left Column */}
