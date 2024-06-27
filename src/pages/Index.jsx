@@ -25,7 +25,7 @@ const Index = () => {
       alignItems="center" 
       bg="black" 
       color={isDark ? "white" : "black"} 
-      borderRadius="lg" 
+      borderRadius="2xl" 
       mx={{ base: "0", md: "auto" }} 
       position="relative"
       overflow="hidden"
