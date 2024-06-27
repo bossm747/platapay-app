@@ -1,9 +1,11 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Container, Box, Flex, IconButton, Text, Switch, useColorMode, Menu, MenuButton, MenuList, MenuItem, Image, Divider } from "@chakra-ui/react";
 import { FaHome, FaUser, FaCog, FaBell, FaQrcode, FaChartBar, FaBars } from "react-icons/fa";
 
 const darkPurple = "#4B0082";
 const white = "#FFFFFF";
+const headerFooterColor = "#4B0082"; // Replace with the actual color from the "Platapay" text
+const rowColor = "#FFFFFF"; // Replace with the actual color from the "Wallet Balance" card
 
 const Index = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -23,7 +25,7 @@ const Index = () => {
       flexDirection="column" 
       justifyContent="flex-start" 
       alignItems="center" 
-      bg="black" 
+      bg={isDark ? "black" : rowColor} 
       color={isDark ? "white" : "black"} 
       borderRadius="2xl" 
       mx={{ base: "0", md: "auto" }} 
@@ -35,7 +37,7 @@ const Index = () => {
     >
       <Box 
         width="100%" 
-        bg="blue.800" 
+        bg={headerFooterColor} 
         p={4} 
         borderRadius="0 0 2xl 2xl"
         color="white"
@@ -71,9 +73,9 @@ const Index = () => {
         <Divider borderColor="whiteAlpha.600" />
       </Box>
 
-      <Box width="100%" bg={darkPurple} flex="1" p={4}>
+      <Box width="100%" bg={rowColor} flex="1" p={4}>
       </Box>
-      <Box width="100%" bg={darkPurple} flex="1" p={4}>
+      <Box width="100%" bg={rowColor} flex="1" p={4}>
       </Box>
       <Box width="100%" bg={white} flex="1" p={4}>
       </Box>
@@ -81,7 +83,7 @@ const Index = () => {
       <Box 
         as="footer"
         width="100%"
-        bg="blue.800"  
+        bg={headerFooterColor}  
         height="60px"
         position="sticky"
         bottom="0"
