@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Container, Box, Flex, IconButton, Text, Switch, useColorMode, Menu, MenuButton, MenuList, MenuItem, Image, Divider } from "@chakra-ui/react";
+import { Container, Box, Flex, IconButton, Text, Switch, useColorMode, Menu, MenuButton, MenuList, MenuItem, Image } from "@chakra-ui/react";
 import { FaHome, FaUser, FaCog, FaBell, FaHeart, FaQrcode, FaChartBar, FaFileAlt, FaBars } from "react-icons/fa";
 
 const Index = () => {
@@ -18,7 +18,7 @@ const Index = () => {
       height="100vh" 
       display="flex" 
       flexDirection="column" 
-      justifyContent="space-between" 
+      justifyContent="flex-start" 
       alignItems="center" 
       bg={isDark ? "black" : "white"} 
       color={isDark ? "white" : "black"} 
@@ -27,19 +27,17 @@ const Index = () => {
       position="relative"
       overflow="hidden"
       p={0}
-      boxShadow="0 0 20px rgba(0, 0, 0, 0.5)" // Glowing shadow
-      border="4px solid darkgrey" // Thick dark grey border
-      borderRadius="20px" // Rounded corners
     >
       <Box 
         width="100%" 
-        bg="blue.800" 
+        bg="blue.900" 
+        height="80vh"  // Changed height to 80% of the screen height
         p={4} 
         borderRadius="0 0 2xl 2xl"
         color="white"
         position="sticky"
         top="0"
-        zIndex="1000"
+        zIndex="2"
         boxShadow="0px 4px 6px rgba(0, 0, 0, 0.1)"
       >
         <Flex justifyContent="space-between" alignItems="center" mb={4}>
@@ -52,7 +50,7 @@ const Index = () => {
           />
           <Box textAlign="center">
             <Box mb={2}>
-              <Image src="/images/new-logo.png" alt="Innovate Hub" height="50px" />
+              <Image src="https://marcroland84.wordpress.com/wp-content/uploads/2024/06/copy-of-innovate-hub-2-1.png?w=1024" alt="Innovate Hub" height="50px" />
             </Box>
             <Text fontSize="lg">Page Title</Text>
           </Box>
@@ -66,21 +64,49 @@ const Index = () => {
             />
           </Flex>
         </Flex>
-        <Divider borderColor="whiteAlpha.600" />
       </Box>
 
+      <Box 
+        width="100%" 
+        p={4} 
+        bg={isDark ? "gray.700" : "gray.100"} 
+        borderRadius="lg" 
+        mt={-8}
+        zIndex="1"
+      >
+        <Text fontSize="xl" fontWeight="bold" textAlign="left">
+          Balance
+        </Text>
+        <Text fontSize="2xl" fontWeight="bold">
+          ₱74,700.00
+        </Text>
+      </Box>
+
+      <Box 
+        width="90%"  
+        bg={isDark ? "gray.700" : "white"} 
+        height="80vh" 
+        mt={2} 
+        mb={4} 
+        borderRadius="lg"
+        boxShadow="xl"
+        color={isDark ? "white" : "black"}
+        zIndex="3"
+      >
+        {/* Add any content you want inside the white container */}
+      </Box>
       <Box 
         as="footer"
         width="100%"
         bg="blue.500"  
-        height="60px"
+        height="60px"  // Set height to match header
         position="sticky"
         bottom="0"
         p={4}
         display="flex"
         justifyContent="space-between"
         alignItems="center"
-        zIndex="1000"
+        zIndex="sticky"
       >
         <Box display="flex" justifyContent="space-between" width="100%">
           {/* Left Column */}
@@ -96,20 +122,20 @@ const Index = () => {
           {/* Center Column */}
           <Box flex="1" textAlign="center" position="relative">
             <Box 
-              width="60px" // Increased size
-              height="60px" // Increased size
+              width="50px" 
+              height="50px" 
               bg="white" 
               borderRadius="50%" 
               display="flex" 
               justifyContent="center" 
               alignItems="center" 
               position="absolute" 
-              top="-30px" // Adjusted position
+              top="-25px" 
               left="50%" 
               transform="translateX(-50%)"
               boxShadow="0 0 10px rgba(0, 0, 0, 0.1)"
             >
-              <FaQrcode size="40px" color="blue.500" fontWeight="bold" /> // Increased size and bold
+              <FaQrcode size="32px" color="blue.500" />
             </Box>
           </Box>
 
