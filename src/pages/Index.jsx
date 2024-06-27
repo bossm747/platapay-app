@@ -93,13 +93,11 @@ const Index = () => {
       >
         <Box display="flex" justifyContent="space-between" width="100%">
           {/* Left Column */}
-          <Box flex="1" display="flex" justifyContent="space-between">
-            <Box flex="1" textAlign="center">
-              <FaHome size="24px" color="white" />
-            </Box>
-            <Box flex="1" textAlign="center">
-              <FaChartBar size="24px" color="white" />
-            </Box>
+          <Box flex="1" display="flex" justifyContent="center" alignItems="center">
+            <FaHome size="24px" color="white" />
+          </Box>
+          <Box flex="1" display="flex" justifyContent="center" alignItems="center">
+            <FaChartBar size="24px" color="white" />
           </Box>
 
           {/* Center Column */}
@@ -123,30 +121,28 @@ const Index = () => {
           </Box>
 
           {/* Right Column */}
-          <Box flex="1" display="flex" justifyContent="space-between">
-            <Box flex="1" textAlign="center">
-              <Menu>
-                <MenuButton
-                  as={IconButton}
-                  icon={<FaCog />}
-                  aria-label="Settings"
-                  variant="ghost"
-                  color="white"
-                  fontSize="24px"
-                />
-                <MenuList bg="gray.700" color="white">
-                  <MenuItem>
-                    <Flex alignItems="center">
-                      <Text mr={2}>Dark Mode</Text>
-                      <Switch isChecked={isDark} onChange={handleToggleTheme} />
-                    </Flex>
-                  </MenuItem>
-                </MenuList>
-              </Menu>
-            </Box>
-            <Box flex="1" textAlign="center" display="flex" justifyContent="center" alignItems="center">
-              <FaUser size="24px" color="white" />
-            </Box>
+          <Box flex="1" display="flex" justifyContent="center" alignItems="center">
+            <Menu>
+              <MenuButton
+                as={IconButton}
+                icon={<FaCog />}
+                aria-label="Settings"
+                variant="ghost"
+                color="white"
+                fontSize="24px"
+              />
+              <MenuList bg="gray.700" color="white">
+                <MenuItem>
+                  <Flex alignItems="center">
+                    <Text mr={2}>Dark Mode</Text>
+                    <Switch isChecked={isDark} onChange={handleToggleTheme} />
+                  </Flex>
+                </MenuItem>
+              </MenuList>
+            </Menu>
+          </Box>
+          <Box flex="1" display="flex" justifyContent="center" alignItems="center">
+            <FaUser size="24px" color="white" />
           </Box>
         </Box>
       </Box>
