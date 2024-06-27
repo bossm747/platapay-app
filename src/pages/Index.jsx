@@ -27,6 +27,9 @@ const Index = () => {
       position="relative"
       overflow="hidden"
       p={0}
+      boxShadow="0 0 20px rgba(0, 0, 0, 0.5)" // Glowing shadow
+      border="4px solid darkgrey" // Thick dark grey border
+      borderRadius="20px" // Rounded corners
     >
       <Box 
         width="100%" 
@@ -49,7 +52,7 @@ const Index = () => {
           />
           <Box textAlign="center">
             <Box mb={2}>
-              <Image src="https://marcroland84.wordpress.com/wp-content/uploads/2024/06/copy-of-innovate-hub-2-1.png?w=1024" alt="Innovate Hub" height="50px" />
+              <Image src="/images/new-logo.png" alt="Innovate Hub" height="50px" />
             </Box>
             <Text fontSize="lg">Page Title</Text>
           </Box>
@@ -93,20 +96,20 @@ const Index = () => {
           {/* Center Column */}
           <Box flex="1" textAlign="center" position="relative">
             <Box 
-              width="50px" 
-              height="50px" 
+              width="60px" // Increased size
+              height="60px" // Increased size
               bg="white" 
               borderRadius="50%" 
               display="flex" 
               justifyContent="center" 
               alignItems="center" 
               position="absolute" 
-              top="-25px" 
+              top="-30px" // Adjusted position
               left="50%" 
               transform="translateX(-50%)"
               boxShadow="0 0 10px rgba(0, 0, 0, 0.1)"
             >
-              <FaQrcode size="32px" color="blue.500" />
+              <FaQrcode size="40px" color="blue.500" fontWeight="bold" /> // Increased size and bold
             </Box>
           </Box>
 
