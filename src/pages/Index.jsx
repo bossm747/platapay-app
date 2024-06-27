@@ -74,10 +74,17 @@ const Index = () => {
       </Box>
 
       <Box width="100%" bg={isDark ? "gray.700" : darkPurple} flex="1" p={4}>
-      </Box>
-      <Box width="100%" bg={isDark ? "gray.700" : darkPurple} flex="1" p={4}>
-      </Box>
-      <Box width="100%" bg={isDark ? "gray.600" : "#F5F5F5"} flex="1" p={4}>
+        <Box 
+          width="calc(100% - 20px)" // 10px less on both sides
+          bg={darkPurple}
+          borderRadius="3xl" // Deeper round edges
+          mx="auto"
+          overflow="hidden"
+        >
+          <Box height="33.33%" bg="transparent"></Box> {/* Row 1 */}
+          <Box height="33.33%" bg="white"></Box> {/* Row 2 */}
+          <Box height="33.33%" bg="white"></Box> {/* Row 3 */}
+        </Box>
       </Box>
 
       <Box 
