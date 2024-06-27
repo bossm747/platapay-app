@@ -36,7 +36,7 @@ const Index = () => {
         color="white"
         position="sticky"
         top="0"
-        zIndex="2"
+        zIndex="1000"
         boxShadow="0px 4px 6px rgba(0, 0, 0, 0.1)"
       >
         <Flex justifyContent="space-between" alignItems="center" mb={4}>
@@ -77,7 +77,7 @@ const Index = () => {
         display="flex"
         justifyContent="space-between"
         alignItems="center"
-        zIndex="sticky"
+        zIndex="1000"
       >
         <Box display="flex" justifyContent="space-between" width="100%">
           {/* Left Column */}
