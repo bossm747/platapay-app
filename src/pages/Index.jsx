@@ -84,37 +84,6 @@ const Index = () => {
       </Box>
 
       <Box 
-        width="calc(100% - 20px)"  // 10px less on both sides
-        height="100vh" 
-        mt={2} 
-        mb={4} 
-        borderRadius="lg"
-        boxShadow="xl"
-        color={isDark ? "white" : "black"}
-        zIndex="3"
-        mx="auto"  // Center the box horizontally
-      >
-        <Box bg="transparent" height="33.33%" />
-        <Box bg={isDark ? "gray.600" : "white"} height="33.33%" />
-        <Box bg={isDark ? "gray.600" : "white"} height="33.33%" />
-      </Box>
-
-      <Box 
-        width="100%"  
-        height="100vh" 
-        mt={2} 
-        mb={4} 
-        borderRadius="lg"
-        boxShadow="xl"
-        color={isDark ? "white" : "black"}
-        zIndex="3"
-        mx={{ base: "0", md: "4" }}
-      >
-        <Box bg="transparent" height="33.33%" />
-        <Box bg={isDark ? "gray.600" : "white"} height="66.67%" />
-      </Box>
-
-      <Box 
         as="footer"
         width="100%"
         bg="blue.500"  
