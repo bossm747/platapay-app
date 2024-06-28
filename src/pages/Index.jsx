@@ -6,6 +6,7 @@ const darkPurple = "#4B0082"; // Updated to a more suitable dark mode color
 const white = "#FFFFFF";
 const headerFooterColor = "#4B0082"; // Replace with the actual color from the "Platapay" text
 const rowColor = "#FFFFFF"; // Replace with the actual color from the "Wallet Balance" card
+const dirtyWhite = "#E8E8E8"; // Define dirty white color
 
 const Index = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -83,7 +84,7 @@ const Index = () => {
         >
           <Box height="33.33%" bg={darkPurple} className="mcr1"></Box> {/* Row 1 */}
           <Box height="33.33%" bg={darkPurple} className="mcr2"></Box> {/* Row 2 */}
-          <Box height="33.33%" bg="white" className="mcr3"></Box> {/* Row 3 */}
+          <Box height="33.33%" bg={dirtyWhite} className="mcr3"></Box> {/* Row 3 */}
         </Box>
         <Box 
           width="calc(100% - 20px)" // 10px less on both sides
@@ -93,8 +94,8 @@ const Index = () => {
           overflow="hidden"
         >
           <Box height="33.33%" bg="transparent" className="c3r1"></Box> {/* Row 1 */}
-          <Box height="33.33%" bg="#E8E8E8" className="c3r2" boxShadow="0 4px 8px rgba(0, 0, 0, 0.1)"></Box> {/* Row 2 */}
-          <Box height="33.33%" bg="#E8E8E8" className="c3r3" boxShadow="0 4px 8px rgba(0, 0, 0, 0.1)"></Box> {/* Row 3 */}
+          <Box height="33.33%" bg={dirtyWhite} className="c3r2" boxShadow="0 4px 8px rgba(0, 0, 0, 0.1)"></Box> {/* Row 2 */}
+          <Box height="33.33%" bg={dirtyWhite} className="c3r3" boxShadow="0 4px 8px rgba(0, 0, 0, 0.1)"></Box> {/* Row 3 */}
         </Box>
       </Box>
 
