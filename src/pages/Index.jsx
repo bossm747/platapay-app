@@ -38,7 +38,7 @@ const Index = () => {
       position="relative"
       overflow="hidden"
       p={0}
-      border={isDark ? "8px solid gray.700" : "8px solid darkgrey"} 
+      border={isDark ? "8px solid black" : "8px solid black"} 
       boxShadow={isDark ? "0 0 10px gray.700" : "0 0 10px white"} 
     >
       <Box 
@@ -83,7 +83,7 @@ const Index = () => {
         <Box 
           width="100%" 
           height="calc(100% - 20px)" 
-          bgGradient={`linear(to-b, ${darkPurple} 70%, ${white} 30%)`}
+          bg={isDark ? "gray.800" : "white"}
           borderRadius="3xl" 
           position="relative"
           overflow="hidden"
