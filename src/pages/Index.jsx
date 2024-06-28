@@ -82,7 +82,7 @@ const Index = () => {
       <Box width="100%" flex="1" p={4}>
         <Box 
           width="100%" 
-          height="100%" 
+          height="calc(100% - 20px)" 
           bgGradient={`linear(to-b, ${darkPurple} 70%, ${white} 30%)`}
           borderRadius="3xl" 
           position="relative"
@@ -90,7 +90,7 @@ const Index = () => {
         >
           <Box 
             width="calc(100% - 40px)" 
-            height="60%" 
+            height="70%" 
             bg={dirtyWhite}
             borderRadius="3xl" 
             mx="auto"
