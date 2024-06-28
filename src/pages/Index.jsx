@@ -84,7 +84,7 @@ const Index = () => {
         width="100%" 
         flex="1" 
         p={4}
-        bg={dirtyWhite}
+        bg="blue"
         borderRadius="3xl" 
         mx="auto"
         mt="auto"
