@@ -92,7 +92,7 @@ const Index = () => {
           <Box 
             width="calc(100% - 40px)" 
             height="70%" 
-            bg={dirtyWhite}
+            bg={isDark ? "gray.800" : "white"}
             borderRadius="3xl" 
             mx="auto"
             mt="auto"
@@ -102,6 +102,7 @@ const Index = () => {
             bottom="0"
             left="50%"
             transform="translateX(-50%)"
+            zIndex="1"
           />
         </Box>
       </Box>
@@ -115,7 +116,7 @@ const Index = () => {
         top="0"
         left="50%"
         transform="translateX(-50%)"
-        zIndex="0"
+        zIndex="2"
       />
 
       <Box 
