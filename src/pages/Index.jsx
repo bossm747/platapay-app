@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Container, Box, Flex, IconButton, Text, Switch, useColorMode, Menu, MenuButton, MenuList, MenuItem, Image, Divider } from "@chakra-ui/react";
 import { FaHome, FaUser, FaCog, FaBell, FaQrcode, FaChartBar, FaBars } from "react-icons/fa";
 
@@ -79,40 +79,19 @@ const Index = () => {
         <Divider borderColor="whiteAlpha.600" />
       </Box>
 
-      <Box width="100%" flex="1" p={4}>
-        <Box 
-          width="100%" 
-          height="calc(100% - 20px)" 
-          bg={isDark ? "gray.800" : "white"}
-          borderRadius="3xl" 
-          position="relative"
-          overflow="hidden"
-        >
-          <Box 
-            width="100%" 
-            height="50px" 
-            bg={mediumBlue}
-            borderRadius="0 0 50% 50%"
-            position="absolute"
-            top="0"
-            left="0"
-          />
-          <Box 
-            width="calc(100% - 40px)" 
-            height="70%" 
-            bg={dirtyWhite}
-            borderRadius="3xl" 
-            mx="auto"
-            mt="auto"
-            mb="20px"
-            boxShadow="0 4px 8px rgba(0, 0, 0, 0.1)"
-            position="absolute"
-            bottom="0"
-            left="50%"
-            transform="translateX(-50%)"
-          />
-        </Box>
-      </Box>
+      {/* Body Container (c1) */}
+      <Box 
+        width="100%" 
+        flex="1" 
+        p={4}
+        bg={dirtyWhite}
+        borderRadius="3xl" 
+        mx="auto"
+        mt="auto"
+        mb="20px"
+        boxShadow="0 4px 8px rgba(0, 0, 0, 0.1)"
+        position="relative"
+      />
 
       <Box 
         as="footer"
