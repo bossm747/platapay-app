@@ -2,11 +2,16 @@ import { useState, useEffect } from "react";
 import { Container, Box, Flex, IconButton, Text, Switch, useColorMode, Menu, MenuButton, MenuList, MenuItem, Image, Divider } from "@chakra-ui/react";
 import { FaHome, FaUser, FaCog, FaBell, FaQrcode, FaChartBar, FaBars } from "react-icons/fa";
 
-const darkPurple = "#4B0082"; // Updated to a more suitable dark mode color
-const white = "#FFFFFF";
-const headerFooterColor = "#4B0082"; // Replace with the actual color from the "Platapay" text
-const rowColor = "#FFFFFF"; // Replace with the actual color from the "Wallet Balance" card
-const dirtyWhite = "#E8E8E8"; // Define dirty white color
+const darkPurple = "#4B0082"; // Dark Purple
+const mediumPurple = "#6A0DAD"; // Medium Purple
+const lightPurple = "#9370DB"; // Light Purple
+const darkBlue = "#1a365d"; // Dark Blue
+const mediumBlue = "#153e75"; // Medium Blue
+const lightBlue = "#2a69ac"; // Light Blue
+const white = "#FFFFFF"; // White
+const headerFooterColor = darkPurple; // Header and Footer Color
+const rowColor = white; // Row Color
+const dirtyWhite = "#E8E8E8"; // Dirty White Color
 
 const Index = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -26,19 +31,19 @@ const Index = () => {
       flexDirection="column" 
       justifyContent="flex-start" 
       alignItems="center" 
-      bg={isDark ? "gray.800" : rowColor} // Updated background color for dark mode
-      color={isDark ? "gray.100" : "black"} // Updated text color for dark mode
+      bg={isDark ? "gray.800" : rowColor} 
+      color={isDark ? "gray.100" : "black"} 
       borderRadius="2xl" 
       mx={{ base: "0", md: "auto" }} 
       position="relative"
       overflow="hidden"
       p={0}
-      border={isDark ? "8px solid gray.700" : "8px solid darkgrey"} // Updated border color for dark mode
-      boxShadow={isDark ? "0 0 10px gray.700" : "0 0 10px white"} // Updated box shadow color for dark mode
+      border={isDark ? "8px solid gray.700" : "8px solid darkgrey"} 
+      boxShadow={isDark ? "0 0 10px gray.700" : "0 0 10px white"} 
     >
       <Box 
         width="100%" 
-        bg={isDark ? "gray.900" : headerFooterColor} // Updated header background color for dark mode
+        bg={isDark ? "gray.900" : headerFooterColor} 
         p={4} 
         borderRadius="0 0 2xl 2xl"
         color="white"
@@ -76,26 +81,26 @@ const Index = () => {
 
       <Box width="100%" bg={isDark ? "gray.700" : darkPurple} flex="1" p={4}>
         <Box 
-          width="calc(100% - 20px)" // 10px less on both sides
+          width="calc(100% - 20px)" 
           bg={darkPurple}
-          borderRadius="3xl" // Deeper round edges
+          borderRadius="3xl" 
           mx="auto"
           overflow="hidden"
         >
-          <Box height="33.33%" bg={darkPurple} className="mcr1"></Box> {/* Row 1 */}
-          <Box height="33.33%" bg={darkPurple} className="mcr2"></Box> {/* Row 2 */}
-          <Box height="33.33%" bg={dirtyWhite} className="mcr3"></Box> {/* Row 3 */}
+          <Box height="33.33%" bg={darkPurple} className="mcr1"></Box> 
+          <Box height="33.33%" bg={darkPurple} className="mcr2"></Box> 
+          <Box height="33.33%" bg={dirtyWhite} className="mcr3"></Box> 
         </Box>
         <Box 
-          width="calc(100% - 20px)" // 10px less on both sides
+          width="calc(100% - 20px)" 
           bg={darkPurple}
-          borderRadius="3xl" // Deeper round edges
+          borderRadius="3xl" 
           mx="auto"
           overflow="hidden"
         >
-          <Box height="33.33%" bg="transparent" className="c3r1"></Box> {/* Row 1 */}
-          <Box height="33.33%" bg={dirtyWhite} className="c3r2" boxShadow="0 4px 8px rgba(0, 0, 0, 0.1)"></Box> {/* Row 2 */}
-          <Box height="33.33%" bg={dirtyWhite} className="c3r3" boxShadow="0 4px 8px rgba(0, 0, 0, 0.1)"></Box> {/* Row 3 */}
+          <Box height="33.33%" bg="transparent" className="c3r1"></Box> 
+          <Box height="33.33%" bg={dirtyWhite} className="c3r2" boxShadow="0 4px 8px rgba(0, 0, 0, 0.1)"></Box> 
+          <Box height="33.33%" bg={dirtyWhite} className="c3r3" boxShadow="0 4px 8px rgba(0, 0, 0, 0.1)"></Box> 
         </Box>
       </Box>
 
@@ -113,7 +118,6 @@ const Index = () => {
         zIndex="1000"
       >
         <Box display="flex" justifyContent="space-between" width="100%">
-          {/* Left Column */}
           <Box flex="1" display="flex" justifyContent="center" alignItems="center">
             <FaHome size="24px" color="white" />
           </Box>
@@ -121,7 +125,6 @@ const Index = () => {
             <FaChartBar size="24px" color="white" />
           </Box>
 
-          {/* Center Column */}
           <Box flex="1" textAlign="center" position="relative">
             <Box 
               width="50px" 
@@ -141,7 +144,6 @@ const Index = () => {
             </Box>
           </Box>
 
-          {/* Right Column */}
           <Box flex="1" display="flex" justifyContent="center" alignItems="center">
             <Menu>
               <MenuButton
@@ -160,8 +162,8 @@ const Index = () => {
                       isChecked={isDark} 
                       onChange={handleToggleTheme} 
                       colorScheme="purple"
-                      bg={isDark ? "gray.700" : "gray.300"} // Updated background color for light mode
-                      borderColor={isDark ? "gray.600" : "gray.400"} // Updated border color for light mode
+                      bg={isDark ? "gray.700" : "gray.300"} 
+                      borderColor={isDark ? "gray.600" : "gray.400"} 
                       _checked={{
                         bg: "purple.500",
                         borderColor: "purple.500",
