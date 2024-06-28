@@ -89,6 +89,15 @@ const Index = () => {
           overflow="hidden"
         >
           <Box 
+            width="100%" 
+            height="50px" 
+            bg={mediumBlue}
+            borderRadius="0 0 50% 50%"
+            position="absolute"
+            top="0"
+            left="0"
+          />
+          <Box 
             width="calc(100% - 40px)" 
             height="70%" 
             bg={dirtyWhite}
