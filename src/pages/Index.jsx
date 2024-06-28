@@ -82,10 +82,10 @@ const Index = () => {
       {/* Body Container (c1) */}
       <Box 
         width="100%" 
+        height="100%"
         flex="1" 
         p={4}
-        bg="blue"
-        borderRadius="3xl" 
+        bg="purple"
         mx="auto"
         mt="auto"
         mb="20px"
