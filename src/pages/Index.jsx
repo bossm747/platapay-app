@@ -9,7 +9,7 @@ const darkBlue = "#1a365d"; // Dark Blue
 const mediumBlue = "#153e75"; // Medium Blue
 const lightBlue = "#2a69ac"; // Light Blue
 const white = "#FFFFFF"; // White
-const headerFooterColor = darkPurple; // Header and Footer Color
+const headerFooterColor = darkBlue; // Header and Footer Color
 const rowColor = white; // Row Color
 const dirtyWhite = "#E8E8E8"; // Dirty White Color
 
@@ -43,7 +43,7 @@ const Index = () => {
     >
       <Box 
         width="100%" 
-        bg={isDark ? "gray.900" : headerFooterColor} 
+        bg={headerFooterColor} 
         p={4} 
         borderRadius="0 0 2xl 2xl"
         color="white"
@@ -79,35 +79,36 @@ const Index = () => {
         <Divider borderColor="whiteAlpha.600" />
       </Box>
 
-      <Box width="100%" bg={isDark ? "gray.700" : darkPurple} flex="1" p={4}>
+      <Box width="100%" flex="1" p={4}>
         <Box 
-          width="calc(100% - 20px)" 
-          bg={darkPurple}
+          width="100%" 
+          height="100%" 
+          bgGradient={`linear(to-b, ${darkPurple} 70%, ${white} 30%)`}
           borderRadius="3xl" 
-          mx="auto"
+          position="relative"
           overflow="hidden"
         >
-          <Box height="33.33%" bg={darkPurple} className="mcr1"></Box> 
-          <Box height="33.33%" bg={darkPurple} className="mcr2"></Box> 
-          <Box height="33.33%" bg={dirtyWhite} className="mcr3"></Box> 
-        </Box>
-        <Box 
-          width="calc(100% - 20px)" 
-          bg={darkPurple}
-          borderRadius="3xl" 
-          mx="auto"
-          overflow="hidden"
-        >
-          <Box height="33.33%" bg="transparent" className="c3r1"></Box> 
-          <Box height="33.33%" bg={dirtyWhite} className="c3r2" boxShadow="0 4px 8px rgba(0, 0, 0, 0.1)"></Box> 
-          <Box height="33.33%" bg={dirtyWhite} className="c3r3" boxShadow="0 4px 8px rgba(0, 0, 0, 0.1)"></Box> 
+          <Box 
+            width="calc(100% - 40px)" 
+            height="60%" 
+            bg={dirtyWhite}
+            borderRadius="3xl" 
+            mx="auto"
+            mt="auto"
+            mb="20px"
+            boxShadow="0 4px 8px rgba(0, 0, 0, 0.1)"
+            position="absolute"
+            bottom="0"
+            left="50%"
+            transform="translateX(-50%)"
+          />
         </Box>
       </Box>
 
       <Box 
         as="footer"
         width="100%"
-        bg={isDark ? "gray.900" : headerFooterColor}  
+        bg={headerFooterColor}  
         height="60px"
         position="sticky"
         bottom="0"
