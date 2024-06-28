@@ -12,7 +12,6 @@ const white = "#FFFFFF"; // White
 const headerFooterColor = darkBlue; // Header and Footer Color
 const rowColor = white; // Row Color
 const dirtyWhite = "#E8E8E8"; // Dirty White Color
-const blueContainer = "#2a69ac"; // Blue Container Color
 
 const Index = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -92,7 +91,7 @@ const Index = () => {
           <Box 
             width="calc(100% - 40px)" 
             height="70%" 
-            bg={isDark ? "gray.800" : "white"}
+            bg={dirtyWhite}
             borderRadius="3xl" 
             mx="auto"
             mt="auto"
@@ -102,22 +101,9 @@ const Index = () => {
             bottom="0"
             left="50%"
             transform="translateX(-50%)"
-            zIndex="1"
           />
         </Box>
       </Box>
-
-      <Box 
-        width="100%" 
-        height="60%" 
-        bg={blueContainer}
-        borderRadius="50%"
-        position="absolute"
-        top="0"
-        left="50%"
-        transform="translateX(-50%)"
-        zIndex="2"
-      />
 
       <Box 
         as="footer"
