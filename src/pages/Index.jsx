@@ -31,7 +31,7 @@ const Index = () => {
       flexDirection="column" 
       justifyContent="flex-start" 
       alignItems="center" 
-      bg={isDark ? "gray.800" : rowColor} 
+      bg={darkPurple} 
       color={isDark ? "gray.100" : "black"} 
       borderRadius="2xl" 
       mx={{ base: "0", md: "auto" }} 
@@ -85,7 +85,6 @@ const Index = () => {
         height="100%"
         flex="1" 
         p={4}
-        bg={darkPurple}
         mx="auto"
         mt="auto"
         mb="20px"
@@ -105,7 +104,7 @@ const Index = () => {
         textAlign="center" 
         width="100%" 
         mb="20px"
-        bg={dirtyWhite}
+        bg={darkPurple}
         p={4}
       >
         <Button 
