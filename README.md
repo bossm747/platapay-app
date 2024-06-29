@@ -1,6 +1,6 @@
-# blue-wallet-app
+# platapay mobile app
 
-Create a wallet app for mobilethat looks and behave loke a native mobile app. It should be in full dark blue background
+A wallet app for mobile that looks and behave like a native mobile app. Developed by Innovate Hub Dev Team using the best A.I. dev engineer "GPT Engineer"
 
 ## Collaborate with GPT Engineer
 
