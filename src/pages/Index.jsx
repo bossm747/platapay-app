@@ -97,20 +97,24 @@ const Index = () => {
         alignItems="center"
       >
         <Image src="https://marcroland84.files.wordpress.com/2024/06/copy-of-innovate-hub-2-1.png?w=1024" alt="Centered Image" objectFit="contain" maxH="100%" maxW="100%" />
-        <Box mt={4} textAlign="center" width="100%">
-          <Button 
-            colorScheme="blue" 
-            mb={2} 
-            width="80%" 
-            _hover={{ bg: "blue.600" }}
-          >
-            Login
-          </Button>
-          <Text>
-            You have no account yet?{" "}
-            <Link color="blue.500" href="#">Create an account</Link>
-          </Text>
-        </Box>
+      </Box>
+
+      {/* Login Button and Text Container */}
+      <Box mt={4} textAlign="center" width="100%" mb="20px">
+        <Button 
+          colorScheme="blue" 
+          mb={2} 
+          width="80%" 
+          _hover={{ bg: "blue.600" }}
+          fontWeight="bold"
+          color="white"
+        >
+          Login
+        </Button>
+        <Text fontWeight="bold" color="white">
+          You have no account yet?{" "}
+          <Link color="blue.500" href="#">Create an account</Link>
+        </Text>
       </Box>
 
       <Box 
