@@ -92,12 +92,20 @@ const Index = () => {
         boxShadow="0 4px 8px rgba(0, 0, 0, 0.1)"
         position="relative"
         display="flex"
+        flexDirection="column"
         justifyContent="center"
         alignItems="center"
       >
         <Image src="https://marcroland84.files.wordpress.com/2024/06/copy-of-innovate-hub-2-1.png?w=1024" alt="Centered Image" objectFit="contain" maxH="100%" maxW="100%" />
-        <Box mt={4} textAlign="center">
-          <Button colorScheme="blue" mb={2}>Login</Button>
+        <Box mt={4} textAlign="center" width="100%">
+          <Button 
+            colorScheme="blue" 
+            mb={2} 
+            width="80%" 
+            _hover={{ bg: "blue.600" }}
+          >
+            Login
+          </Button>
           <Text>
             You have no account yet?{" "}
             <Link color="blue.500" href="#">Create an account</Link>
