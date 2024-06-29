@@ -102,12 +102,14 @@ const Index = () => {
       {/* Login Button and Text Container */}
       <Box mt={4} textAlign="center" width="100%" mb="20px">
         <Button 
-          colorScheme="blue" 
+          colorScheme="purple" 
           mb={2} 
           width="80%" 
-          _hover={{ bg: "blue.600" }}
+          _hover={{ bg: "purple.600" }}
           fontWeight="bold"
           color="white"
+          paddingTop="12px"
+          paddingBottom="12px"
         >
           Login
         </Button>
