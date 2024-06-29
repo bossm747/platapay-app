@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Container, Box, Flex, IconButton, Text, Switch, useColorMode, Menu, MenuButton, MenuList, MenuItem, Image, Divider } from "@chakra-ui/react";
+import { Container, Box, Flex, IconButton, Text, Switch, useColorMode, Menu, MenuButton, MenuList, MenuItem, Image, Divider, Button, Link } from "@chakra-ui/react";
 import { FaHome, FaUser, FaCog, FaBell, FaQrcode, FaChartBar, FaBars } from "react-icons/fa";
 
 const darkPurple = "#4B0082"; // Dark Purple
@@ -96,6 +96,13 @@ const Index = () => {
         alignItems="center"
       >
         <Image src="https://marcroland84.files.wordpress.com/2024/06/copy-of-innovate-hub-2-1.png?w=1024" alt="Centered Image" objectFit="contain" maxH="100%" maxW="100%" />
+        <Box mt={4} textAlign="center">
+          <Button colorScheme="blue" mb={2}>Login</Button>
+          <Text>
+            You have no account yet?{" "}
+            <Link color="blue.500" href="#">Create an account</Link>
+          </Text>
+        </Box>
       </Box>
 
       <Box 
