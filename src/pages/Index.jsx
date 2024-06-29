@@ -100,7 +100,14 @@ const Index = () => {
       </Box>
 
       {/* Login Button and Text Container */}
-      <Box mt={4} textAlign="center" width="100%" mb="20px">
+      <Box 
+        mt={4} 
+        textAlign="center" 
+        width="100%" 
+        mb="20px"
+        bg="purple.500" // Set background color to purple
+        p={4} // Add padding to ensure content is not touching the edges
+      >
         <Button 
           colorScheme="purple" 
           mb={2} 
