@@ -85,7 +85,7 @@ const Index = () => {
         height="100%"
         flex="1" 
         p={4}
-        bg="purple"
+        bg={darkPurple}
         mx="auto"
         mt="auto"
         mb="20px"
@@ -105,8 +105,8 @@ const Index = () => {
         textAlign="center" 
         width="100%" 
         mb="20px"
-        bg="purple.500" // Set background color to purple
-        p={4} // Add padding to ensure content is not touching the edges
+        bg={dirtyWhite}
+        p={4}
       >
         <Button 
           colorScheme="purple" 
