@@ -91,7 +91,12 @@ const Index = () => {
         mb="20px"
         boxShadow="0 4px 8px rgba(0, 0, 0, 0.1)"
         position="relative"
-      />
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+      >
+        <Image src="https://marcroland84.files.wordpress.com/2024/06/copy-of-innovate-hub-2-1.png?w=1024" alt="Centered Image" objectFit="contain" maxH="100%" maxW="100%" />
+      </Box>
 
       <Box 
         as="footer"
